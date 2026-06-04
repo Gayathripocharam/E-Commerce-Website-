@@ -1,6 +1,6 @@
-# 🌸 HerCloset — Premium Fashion Affiliate Hub & Pinterest Creator Suite
+# 🌸 HerCloset — Premium Fashion Affiliate Hub & Creator Suite
 
-**HerCloset** is a modern, high-performance web application designed for fashion curations, aesthetic boards, and automated Pinterest affiliate marketing. Built using **Next.js 15**, **Framer Motion**, **Tailwind CSS**, and **Lucide Icons**, it showcases actual Pinterest-curated apparel with instant affiliate monetization links.
+**HerCloset** is a modern, high-performance web application designed for fashion curations, aesthetic boards, and automated social affiliate marketing. Built using **Next.js 15**, **Framer Motion**, **Tailwind CSS**, and **Lucide Icons**, it showcases custom-curated apparel with instant affiliate monetization links.
 
 ---
 
@@ -14,7 +14,7 @@
 * **Count-Up Stat Counter**: Live numeric progression from zero to target values when loading statistics.
 
 ### 2. 🛍️ Real-Time Product Database & Instant Redirects
-* Fully replaces boilerplate mock data with **7 custom items** parsed directly from the creator's live Pinterest board:
+* Fully replaces boilerplate mock data with **7 custom items** parsed directly from the creator's live curation feed:
   1. *Blue Paisley Halter Top & Skirt Co-Ord Set*
   2. *Cotton Floral Print Short Kurti Tunic*
   3. *Coastal Paisley Halter Midi Dress*
@@ -24,16 +24,16 @@
   7. *Sunshine Blossom Backless Mini Dress*
 * Removed all loading delays to redirect users directly to their destination Amazon affiliate pages instantly.
 
-### 3. 🧠 AI Pin Generator Hub (Admin Creator Suite)
+### 3. 🧠 AI Content Generator Hub (Admin Creator Suite)
 * Access a private admin suite via secure password validation:
   * **Password**: `admin@hercloset`
-* **Auto-SEO copy engine**: Instantly generates **10 distinct Pinterest titles and descriptions** + **20 targeted tags** for any product.
-* **Interactive checklist**: Track generated and posted pins directly.
+* **Auto-SEO copy engine**: Instantly generates **10 distinct social post titles and descriptions** + **20 targeted tags** for any product.
+* **Interactive checklist**: Track generated and posted assets directly.
 * **Affiliate Metrics Tab**: Real-time logging of views, Amazon clicks, and click-through rates (CTR) with estimated commission earnings.
 * **Newsletter Leads Manager**: Collects and prints subscriber emails directly inside the admin logs.
 
 ### 4. 📱 Mobile-First Layout
-* Fully responsive masonry grid rendering **2-columns on mobile screens** to match the native Pinterest app experience.
+* Fully responsive masonry grid rendering **2-columns on mobile screens** to match a native premium mobile app experience.
 * Clean, compact bottom sheet tab-bar with optimized labels (`Feed`, `Builder`, `Closet`, `AI Stylist`, `Search`).
 
 ---
