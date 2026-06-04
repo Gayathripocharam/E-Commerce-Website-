@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #FDFBF9; /* Warm luxury linen cream */
+  --foreground: #1D1B19; /* High-contrast soft charcoal */
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --border-color: rgba(224, 168, 153, 0.2);
+}
+
+@theme {
+  --color-brand-pink-light: #F7EAE6;
+  --color-brand-pink: #E0A899;
+  --color-brand-pink-dark: #C98B7C;
+  --color-brand-gold: #D4AF37;
+  --color-brand-champagne: #FAF6F0;
+  --color-brand-burgundy: #4A0E17;
+  --color-brand-burgundy-light: #722F37;
+  --color-brand-slate: #2C2C2C;
+  --color-brand-cream: #FAF6F0;
+  
+  --font-sans: "Outfit", sans-serif;
+  --font-display: "Playfair Display", serif;
+  
+  --animate-fade-in-up: fade-in-up 0.5s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Infinite right-to-left ticker / marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.fashion-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.fashion-ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.fashion-ticker-wrap {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Styles */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 175, 160, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(114, 47, 55, 0.04);
+}
+
+.glassmorphism-dark {
+  background: rgba(44, 44, 44, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Masonry Pinterest Grid */
+.masonry-grid {
+  column-count: 2; /* 2 columns on mobile */
+  column-gap: 0.75rem; /* tighter gap for mobile */
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .masonry-grid {
+    column-count: 2;
+    column-gap: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 4;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 0.75rem; /* tighter bottom margin for mobile */
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .masonry-item {
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E0A899;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C98B7C;
+}
+
+/* Smooth Image Scale */
+.hover-zoom img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.06);
+}
